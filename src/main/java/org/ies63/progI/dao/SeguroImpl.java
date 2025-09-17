@@ -1,8 +1,10 @@
 package org.ies63.progI.dao;
 
-import org.example.entities.Seguro;
-import org.example.interfaces.AdmConexion;
-import org.example.interfaces.DAO;
+
+import org.ies63.progI.entities.Cliente;
+import org.ies63.progI.entities.Seguro;
+import org.ies63.progI.interfaces.AdmConexion;
+import org.ies63.progI.interfaces.DAO;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -144,7 +146,7 @@ public class SeguroImpl implements AdmConexion, DAO<Seguro, Integer> {
   }
 
   @Override
-  public Seguro getById(Integer id) {
+  public Cliente getById(Integer id) {
     conn = obtenerConexion();
     PreparedStatement pst = null;
     ResultSet rs = null;
