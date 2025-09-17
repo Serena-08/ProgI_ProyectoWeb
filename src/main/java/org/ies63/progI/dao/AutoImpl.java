@@ -4,8 +4,8 @@ package org.ies63.progI.dao;
 
 import org.ies63.progI.configuracion.AdministradorConexion;
 import org.ies63.progI.entities.Auto;
-import org.ies63.progI.entities.Cliente;
 import org.ies63.progI.entities.Marca;
+import org.ies63.progI.entities.Seguro;
 import org.ies63.progI.interfaces.AdmConexion;
 import org.ies63.progI.interfaces.DAO;
 
@@ -206,7 +206,7 @@ public class AutoImpl implements DAO<Auto,Integer>,AdmConexion{
   }
 
   @Override
-  public Cliente getById(Integer id) {
+  public Seguro getById(Integer id) {
     //Establecer conexion
     conn=AdministradorConexion.obtenerConexion();
     String sql="SELECT * FROM autos WHERE idAuto= " + id;

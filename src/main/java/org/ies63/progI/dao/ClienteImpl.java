@@ -2,6 +2,7 @@ package org.ies63.progI.dao;
 
 
 import org.ies63.progI.entities.Cliente;
+import org.ies63.progI.entities.Seguro;
 import org.ies63.progI.interfaces.AdmConexion;
 import org.ies63.progI.interfaces.DAO;
 
@@ -155,7 +156,7 @@ public class ClienteImpl implements DAO<Cliente, Integer>, AdmConexion {
   }
 
   @Override
-  public Cliente getById(Integer id) {
+  public Seguro getById(Integer id) {
     conn = obtenerConexion();
     PreparedStatement pst = null;
     ResultSet rs = null;
