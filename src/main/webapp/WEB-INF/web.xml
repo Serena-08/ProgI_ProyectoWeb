@@ -6,7 +6,7 @@
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
     <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>org.ies63.progI.HelloServlet</servlet-class>
+    <servlet-class>org.ies63.progI.servlets.HelloServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>

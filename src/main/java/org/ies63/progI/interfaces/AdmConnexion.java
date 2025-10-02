@@ -4,16 +4,17 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public interface AdmConexion {
+public interface AdmConnexion {
+
   default Connection obtenerConexion(){
     //4 datos de conexion
     String dbDriver= "com.mysql.cj.jdbc.Driver";
-    //cadena conexion a mi BD
-    String dbCadenaConexion = "jdbc:mysql://127.0.0.1:3306/progAutos";
-    //nom usuarioBD
-    String dbUsuario ="root";
-    //pass bd
-    String dbPass="1234";
+    // cadena conexion a mi BD
+    String dbCadenaConexion="jdbc:mysql://localhost:3306/progAutos";
+    // nom usuarioBD
+    String dbUsuario="root";
+    // pass bd
+    String dbPass="root";
 
     Connection conn = null;
 
@@ -29,10 +30,9 @@ public interface AdmConexion {
       System.out.println("No se pudo conectar a la BD");
       throw new RuntimeException(e);
     }
-
     System.out.println("Conexión exitosa a la BD");
-    return conn;
+    return  conn;
   }
 
-  void delete(Integer id);
+
 }

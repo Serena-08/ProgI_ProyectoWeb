@@ -2,14 +2,14 @@ package org.ies63.progI.dao;
 
 
 import org.ies63.progI.entities.Seguro;
-import org.ies63.progI.interfaces.AdmConexion;
+import org.ies63.progI.interfaces.AdmConnexion;
 import org.ies63.progI.interfaces.DAO;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SeguroImpl implements AdmConexion, DAO<Seguro, Integer> {
+public class SeguroImpl implements AdmConnexion, DAO<Seguro, Integer> {
 
   private Connection conn = null;
 

@@ -2,19 +2,18 @@ package org.ies63.progI.dao;
 
 
 import org.ies63.progI.entities.Cliente;
-import org.ies63.progI.entities.Seguro;
-import org.ies63.progI.interfaces.AdmConexion;
+import org.ies63.progI.interfaces.AdmConnexion;
 import org.ies63.progI.interfaces.DAO;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClienteImpl implements DAO<Cliente, Integer>, AdmConexion {
+public class ClienteImpl implements DAO<Cliente, Integer>, AdmConnexion {
   private Connection conn = null;
 
   private static final String SQL_INSERT =
-      "INSERT INTO clientes (nombre, apellido, telefono) " +
+      "INSERT INTO clientes (nom.bre, apellido, telefono) " +
           "VALUES (?, ?, ?)";
 
   private static final String SQL_UPDATE =
@@ -156,7 +155,7 @@ public class ClienteImpl implements DAO<Cliente, Integer>, AdmConexion {
   }
 
   @Override
-  public Seguro getById(Integer id) {
+  public Cliente getById(Integer id) {
     conn = obtenerConexion();
     PreparedStatement pst = null;
     ResultSet rs = null;

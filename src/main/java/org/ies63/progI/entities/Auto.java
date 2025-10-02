@@ -182,7 +182,4 @@ public class Auto implements Comparable {
 
 		return resultado;
 	}
-
-
-
 }

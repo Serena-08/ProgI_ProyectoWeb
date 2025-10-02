@@ -1,4 +1,4 @@
-package org.ies63.progI;
+package org.ies63.progI.servlets;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
