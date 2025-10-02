@@ -1,5 +1,6 @@
 package org.ies63.progI.entities;
 
+// Clase Cliente
 public class Cliente implements Comparable {
   private int id;
   private String nombre;

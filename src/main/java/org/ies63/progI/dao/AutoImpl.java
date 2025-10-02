@@ -205,6 +205,7 @@ public class AutoImpl implements DAO<Auto,Integer>, AdmConnexion {
     boolean existe = false;
     Auto auto=null;
 
+
     try {
       pst = conn.prepareStatement(SQL_GETBYID); // CREO STATEMENT
       pst.setInt(1,id);
